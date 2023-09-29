@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* Body */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+nav {
+    height: 80px;
+    width: 100%;
+    background: #34495e;
+
+}
+
+label.logo {
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    padding: 0 100px;
+    line-height: 80px;
+}
+
+nav ul {
+    float: right;
+    margin-right: 40px;
+
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+
+}
+
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+
+nav a:hover {
+    border: 1px solid white;
+    transition: 0.5 ease;
+}
+
+nav #icon {
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 1048px) {
+    label.logo {
+        font-size: 32px;
+        padding-left: 60px;
+    }
+
+    nav ul {
+        margin-right: 20px
+    }
+
+    nav a {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 1048px) {
+    nav #icon {
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2f3640;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all 0.5 ease;
+    }
+
+    nav li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+
+    nav a {
+        font-size: 20px;
+    }
+
+    nav a:hover {
+        border: none;
+        color: #3498db;
+    }
+
+    nav ul.show {
+        left: 0;
+    }
+}
+.container{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: url("Images/scuba\ 3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 408px;
+    
+    
+}
+
+.container h4{
+    font-size: 45px;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #fff;
+}
+
+.container p{
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #fff;
+}
+.content img{
+    width: 100%;
+}

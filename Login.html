@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <title>Document</title>
+        <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#icon').click(function(){
+                    $('ul').toggleClass('show'); 
+                });
+            });
+        </script>
+        <link rel="stylesheet" href="login.css">
+    </head>
+    <body>
+        <!-- NAVIGATION BAR START -->
+        <nav>
+            <label class="logo">SCUBA LIFE</label>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About US.html">About Us</a></li>
+                <li><a href="service.html">Our Services</a></li>
+                <li><a href="Blog.html">Blog</a></li>
+                <li><a href="Login.html">Register</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+            <label id="icon">
+                <i class="fas fa-bars"></i>
+            </label>
+        </nav>
+        <div class="section">
+            <h2>Login</h2>
+        </div>
+        <div class="sharks">
+            <div class="container">
+                <h1>Please Login</h1>
+                <form>
+                    <div class="form-control">
+                        <input type="text" required>
+                        <label>Email</label>
+                        <!-- <label>
+                            <span style="transition-delay: 0ms">E</span>
+                            <span style="transition-delay: 50ms">m</span>
+                            <span style="transition-delay: 100ms">a</span>
+                            <span style="transition-delay: 150ms">i</span>
+                            <span style="transition-delay: 200ms">l</span>
+                        </label> -->
+                        
+                    </div>
+                    <div class="form-control">
+                        <input type="password" required>
+                        <label>Password</label>
+                        
+                    </div>
+                    <button class="btn">login</button>
+                    <p class="text"> Don't have an account? <a href="register.html">Register</a></p>
+        
+                </form>
+                
+            </div>
+        </div>
+
+        <script src="whales.js"></script>
+
+</body>
